@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { TextField, Button } from "@material-ui/core";
 import "whatwg-fetch";
+import styles from "../styleApp/style";
+import { withStyles } from "@material-ui/core/styles";
 class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -55,6 +57,7 @@ class SignUp extends Component {
       });
   };
   render() {
+    const { classes } = this.props;
     const {
       isLoading,
       token,
@@ -83,35 +86,37 @@ class SignUp extends Component {
             </div>
           ) : (
             <div>
-              <p>Sign Up</p>
               <form onSubmit={this.onSignUp}>
-                <TextField
-                  type="text"
-                  required
-                  placeholder="handle"
-                  value={handle}
-                  onChange={this.onchangeInputs("handle")}
-                />
-                <br />
-                <TextField
-                  type="email"
-                  required
-                  placeholder="Email"
-                  value={signUpEmail}
-                  onChange={this.onchangeInputs("signUpEmail")}
-                />
-                <br />
-                <TextField
-                  type="password"
-                  required
-                  placeholder="Password"
-                  value={signUpPassword}
-                  onChange={this.onchangeInputs("signUpPassword")}
-                />
-                <br />
-                <Button type="submit" variant="contained" color="primary">
-                  Sign Up
-                </Button>
+                <div className={classes.handle}>
+                  <p>Sign Up</p>
+                  <TextField
+                    type="text"
+                    required
+                    placeholder="handle"
+                    value={handle}
+                    onChange={this.onchangeInputs("handle")}
+                  />
+                  <br />
+                  <TextField
+                    type="email"
+                    required
+                    placeholder="Email"
+                    value={signUpEmail}
+                    onChange={this.onchangeInputs("signUpEmail")}
+                  />
+                  <br />
+                  <TextField
+                    type="password"
+                    required
+                    placeholder="Password"
+                    value={signUpPassword}
+                    onChange={this.onchangeInputs("signUpPassword")}
+                  />
+                  <br />
+                  <Button type="submit" variant="contained" color="primary">
+                    Sign Up
+                  </Button>
+                </div>
               </form>
             </div>
           )}
@@ -128,4 +133,4 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+export default withStyles(styles)(SignUp);

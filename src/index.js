@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
-import SignUp from "../src/component/signupform";
+
 import Main from "../src/component/mainroutes";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";

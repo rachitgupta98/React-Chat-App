@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { TextField, Button } from "@material-ui/core";
+import styles from "../styleApp/style";
+import { withStyles } from "@material-ui/core/styles";
 class SignIn extends Component {
   constructor(props) {
     super(props);
@@ -44,6 +46,7 @@ class SignIn extends Component {
       });
   };
   render() {
+    const { classes } = this.props;
     const { signInError, signInPassword, signInEmail } = this.state;
     return (
       <div>
@@ -51,27 +54,29 @@ class SignIn extends Component {
           <p>{signInError}</p>
         ) : (
           <div>
-            <p>Sign In</p>
             <form onSubmit={this.onSignIn}>
-              <TextField
-                type="email"
-                required
-                placeholder="email"
-                value={signInEmail}
-                onChange={this.onchangeInputs("signInEmail")}
-              />
-              <br />
-              <TextField
-                type="password"
-                required
-                placeholder="Password"
-                value={signInPassword}
-                onChange={this.onchangeInputs("signInPassword")}
-              />
-              <br />
-              <Button type="submit" variant="contained" color="primary">
-                Sign In
-              </Button>
+              <div className={classes.handle}>
+                <p>Sign In</p>
+                <TextField
+                  type="email"
+                  required
+                  placeholder="email"
+                  value={signInEmail}
+                  onChange={this.onchangeInputs("signInEmail")}
+                />
+                <br />
+                <TextField
+                  type="password"
+                  required
+                  placeholder="Password"
+                  value={signInPassword}
+                  onChange={this.onchangeInputs("signInPassword")}
+                />
+                <br />
+                <Button type="submit" variant="contained" color="primary">
+                  Sign In
+                </Button>
+              </div>
             </form>
           </div>
         )}
@@ -81,4 +86,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default withStyles(styles)(SignIn);
