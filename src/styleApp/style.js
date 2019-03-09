@@ -1,8 +1,28 @@
 const styles = {
   heading: {
+    display: "flex"
+  },
+  links: {
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
+    position: "absolute",
+    right: 0,
+    justifyContent: "space-between space-around"
+  },
+  menuButton: {
+    position: "absolute",
+    right: 0
+  },
+  drawerWidth: {
+    width: "auto"
+  },
+  drawerColor: {
+    textAlign: "center"
+  },
+  headerwidth: {
+    width: "100",
+    padding: 0,
+    margin: 0,
+    float: "left"
   },
   paper: {
     width: "auto",
