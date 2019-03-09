@@ -2,13 +2,14 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const withAuth = require("./auth");
-const userModel = require("../models/schema");
+const userModel = require("../component/models/schema");
 const jwt = require("jsonwebtoken");
 const secretkey = "secret";
 router.get("/api/checkToken", withAuth, (req, res) => {
   res.sendStatus(200);
 });
 //post request
+
 router.post(
   "/api/signup",
   // router.post("/signin", signInFunction);
