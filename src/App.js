@@ -74,7 +74,7 @@ class App extends Component {
 
     return (
       <Fragment>
-        <Header classes={classes} />
+        {/* <Header classes={classes} /> */}
         <div>
           <Grid container spacing={24}>
             <Grid item xs={6} className={classes.paper}>
