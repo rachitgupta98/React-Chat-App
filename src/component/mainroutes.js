@@ -13,7 +13,7 @@ class Main extends Component {
     return (
       <div>
         <Header classes={classes} />
-        <ul>
+        {/*  <ul>
           <li>
             <Link to="/api/signup">Signup</Link>
           </li>
@@ -23,7 +23,7 @@ class Main extends Component {
           <li>
             <Link to="/api/chat">Chat</Link>
           </li>
-        </ul>
+        </ul> */}
         <Switch>
           <Route path="/api/signup" exact component={SignUp} />
           <Route path="/api/signin" exact component={SignIn} />
