@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
     "@types/whatwg-fetch": "0.0.33",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
