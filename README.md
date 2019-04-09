@@ -1,3 +1,8 @@
+A complete Chat App using technolgies given below
+## React,  Nodejs, MongoDB, Socket.io.
+
+## GSOC USER REGISTRATION AND LOGIN PANEL available.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
