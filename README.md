@@ -3,6 +3,13 @@ A complete Chat App using technolgies given below
 
 ## GSOC USER REGISTRATION AND LOGIN PANEL available.
 
+## SETUP
+1. git clone https://github.com/rachitgupta98/React-Chat-App
+2. npm install
+3. npm start
+4. app running happy coding
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
