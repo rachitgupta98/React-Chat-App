@@ -1,9 +1,8 @@
 A complete Chat App using technolgies given below
 ## React,  Nodejs, MongoDB, Socket.io.
 
-## GSOC USER REGISTRATION AND LOGIN PANEL available.
-
 ## SETUP
+0. fork the repository
 1. git clone https://github.com/rachitgupta98/React-Chat-App
 2. npm install
 3. npm start
